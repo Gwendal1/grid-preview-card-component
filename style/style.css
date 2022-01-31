@@ -1,0 +1,91 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+}
+
+.cars{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.car{
+    color:hsl(0, 0%, 100%);
+    font-size: 15px;
+    padding: 20px;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+#Sedans{
+    background-color:  hsl(31, 77%, 52%);
+}
+
+#Sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+#Sedans button:hover{
+    background-color:  hsl(31, 77%, 52%);
+    color: white;
+}
+
+#SUV{
+    background-color: hsl(184, 100%, 22%);
+}
+
+#SUV button{
+    color: hsl(184, 100%, 22%);
+}
+
+#SUV button:hover{
+    background-color:hsl(184, 100%, 22%);
+    color:white;
+}
+
+#Luxury{
+    background-color: hsl(179, 100%, 13%);
+}
+
+#Luxury button{
+    color:hsl(179, 100%, 13%);
+}
+
+#Luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color:white;
+}
+
+button{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    pointer-events: auto;
+    cursor: pointer;
+    padding: 15px 25px;
+    margin: 0;
+    font-size: inherit;
+    border: 2px solid white;
+    border-radius: 3rem;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+    .cars{
+        margin: 100px 200px;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .car{
+        padding: 40px;
+    }
+  }
